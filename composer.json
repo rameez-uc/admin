@@ -1,55 +1,31 @@
 {
-    "name": "rameez-uc/yii2-admin",
-    "description": "The Admin extension for the Yii framework",
-    "keywords": [
-        "yii2",
-        "admin",
-        "code generator"
-    ],
+
+    "name": "rameez-uc/yii2-",
+    "description": "Admin Module",
     "type": "yii2-extension",
-    "license": "BSD-3-Clause",
+    "keywords": ["yii2","extension"],
+    "license": "MIT",
     "authors": [
         {
             "name": "Rameez Raza",
-            "email": "rameezr@unocourt.com"
+            "email": "rameezr@unicourt.com"
         }
     ],
-    "minimum-stability": "dev",
+
     "require": {
-        "yiisoft/yii2": "~2.0.14",
-        "phpspec/php-diff": "^1.1.0"
+
+        "yiisoft/yii2": "~2.0.0"
+
     },
-    "require-dev": {
-        "yiisoft/yii2-coding-standards": "~2.0",
-        "phpunit/phpunit": "<7"
-    },
+
     "autoload": {
+
         "psr-4": {
+
             "yii\\admin\\": "src"
+
         }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "yiiunit\\admin\\": "tests"
-        }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "2.0.x-dev"
-        }
-    },
-    "config": {
-        "process-timeout": 1800,
-        "fxp-asset": {
-            "enabled": false
-        }
-    },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://asset-packagist.org",
-            "type": "vcs",
-            "url": "https://github.com/rameez-uc/yii2-admin"
-        }
-    ]
+
+    }
+
 }
