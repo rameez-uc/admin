@@ -30,7 +30,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "yiiunit\\gii\\": "tests"
+            "yiiunit\\admin\\": "tests"
         }
     },
     "extra": {
@@ -47,7 +47,9 @@
     "repositories": [
         {
             "type": "composer",
-            "url": "https://asset-packagist.org"
+            "url": "https://asset-packagist.org",
+            "type": "vcs",
+            "url": "https://github.com/rameez-uc/yii2-admin"
         }
     ]
 }
