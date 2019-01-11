@@ -1,60 +1,10 @@
 {
-    "name": "rameez-uc/admin",
-    "description": "The debugger extension for the Yii framework",
-    "keywords": [
-        "yii2",
-        "debug",
-        "debugger"
-    ],
+    "name": "rameez-uc/yii2-admin",
     "type": "yii2-extension",
-    "license": "BSD-3-Clause",
-    "support": {
-        "issues": "https://github.com/rameez-uc/admin/issues",
-        "forum": "http://www.yiiframework.com/forum/",
-        "wiki": "http://www.yiiframework.com/wiki/",
-        "irc": "irc://irc.freenode.net/yii",
-        "source": "https://github.com/rameez-uc/admin"
-    },
-    "authors": [
-        {
-            "name": "Qiang Xue",
-            "email": "qiang.xue@gmail.com"
-        },
-        {
-            "name": "Simon Karlen",
-            "email": "simi.albi@outlook.com"
-        }
-    ],
     "minimum-stability": "dev",
-    "require": {
-        "php": ">=5.4",
-        "ext-mbstring": "*",
-        "yiisoft/yii2": "~2.0.13"
-    },
-    "require-dev": {
-        "yiisoft/yii2-swiftmailer": "*",
-        "yiisoft/yii2-coding-standards": "~2.0",
-        "phpunit/phpunit": "<7"
-    },
     "autoload": {
         "psr-4": {
-            "yii\\admin\\": "src"
+            "rameez-uc\\admin\\": ""
         }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "yiiunit\\admin\\": "tests"
-        }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "2.0.x-dev"
-        }
-    },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://asset-packagist.org"
-        }
-    ]
+    }
 }
