@@ -1,14 +1,14 @@
 <?php
 
-namespace app\modules\admin\controllers;
+namespace yii\admin\controllers;
 use yii\web\Controller;
 
-use app\modules\admin\models\Pages;
-use app\modules\admin\components\BaseDal;
-use app\modules\admin\components\PagesDal;
+use yii\admin\models\Pages;
+use yii\admin\components\BaseDal;
+use yii\admin\components\PagesDal;
 
-class PagesController extends Controller
-{
+class PagesController extends PageBaseController
+{	
     public function actionIndex()
     {
     	// $pages_dal = new PagesDal;

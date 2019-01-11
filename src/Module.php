@@ -1,6 +1,11 @@
 <?php
 
-namespace app\modules\admin;
+namespace yii\admin;
+
+use Yii;
+use yii\base\BootstrapInterface;
+use yii\helpers\Json;
+use yii\web\ForbiddenHttpException;
 
 /**
  * admin module definition class
@@ -10,7 +15,7 @@ class Module extends \yii\base\Module
     /**
      * {@inheritdoc}
      */
-    public $controllerNamespace = 'app\modules\admin\controllers';
+    public $controllerNamespace = 'yii\admin\controllers';
 
     /**
      * {@inheritdoc}
