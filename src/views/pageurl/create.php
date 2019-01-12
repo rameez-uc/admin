@@ -35,7 +35,11 @@ use yii\widgets\ActiveForm;
         <?= $form->field($model, 'created_date') ?>
         <?= $form->field($model, 'last_modified_date') ?>
         <?= $form->field($model, 'sitemap_priority') ?>
-        <?= $form->field($model, 'sitemap_changefreq') ?>
+        <?= $form->field($model, 'sitemap_changefreq')->dropDownList(
+                                        ['always' => 'Always', 'hourly' => 'Hourly', 'daily' => 'Daily', 'weekly' => 'Weekly', 'month' => 'Month' ],
+                                        ['prompt'=>'']    // options
+                                    );
+         ?>
     
         <div class="form-group">
             <?= Html::submitButton('Submit', ['class' => 'btn btn-primary']) ?>
