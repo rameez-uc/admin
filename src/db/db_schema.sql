@@ -38,3 +38,14 @@ CREATE TABLE IF NOT EXISTS `tbl_page_url`(
     UNIQUE KEY `sitemap_url_uk`(`url`),
     FOREIGN KEY (`tbl_sitemap_file_id`) references `tbl_sitemap_file` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
+
+CREATE TABLE IF NOT EXISTS `tbl_page_meta`(
+    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    `page_id` INT UNSIGNED NOT NULL,
+    `layout` INT UNSIGNED DEFAULT NULL,
+    `body_class` VARCHAR(500) NOT NULL,
+    `status` VARCHAR(500) NOT NULL,
+    PRIMARY KEY(`id`),
+    UNIQUE KEY (`page_id`),
+    FOREIGN KEY (`page_id`) references `tbl_page_url` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;

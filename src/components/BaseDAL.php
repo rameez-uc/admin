@@ -1,10 +1,11 @@
 <?php
 
 
-namespace app\modules\admin\components;
+namespace yii\admin\components;
 use Yii;
+use yii\base\Component;
 
-class BaseDAL
+class BaseDAL extends Component
 {
 	
 	public function load_to_yii_model($model){
