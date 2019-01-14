@@ -46,26 +46,12 @@ SiteCoreAsset::register($this);
                 <li>
                     <a href="#">Pages</a>
                 </li>
-                <li>
-                    <a href="#">Overview</a>
-                </li>
-                <li>
-                    <a href="#">Events</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Services</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
             </ul>
         </div>
 
                 <!-- Page Content -->
-        <div id="page-content-wrapper">
+        <!-- <div > -->
+        <section id="page-content-wrapper" class="container-fluid flex-grow-1">
             <?php
             NavBar::begin([
                 'brandLabel' => Yii::$app->name,
@@ -130,12 +116,13 @@ SiteCoreAsset::register($this);
 
             <footer class="footer">
                 <div class="container">
-                    <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
+                    <p class="pull-left">&copy; UniCourt <?= date('Y') ?></p>
 
                     <p class="pull-right"><?= Yii::powered() ?></p>
                 </div>
             </footer>
-        </div>
+        </section>
+        <!-- </div> -->
         <!-- /#page-content-wrapper -->
 </div>
 
